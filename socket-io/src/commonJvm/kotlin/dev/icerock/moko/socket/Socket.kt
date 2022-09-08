@@ -40,6 +40,8 @@ actual class Socket actual constructor(
 
                 result
             }
+            path = config?.path
+            secure = config?.secure == true
         })
 
         object : SocketBuilder {
